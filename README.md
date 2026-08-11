@@ -1,6 +1,40 @@
 # Stock Market Data Engineering Pipeline
 
 An end-to-end data engineering project that processes historical and real-time stock-market data for analytics and dashboard reporting.
+## Project Screenshots
+
+These screenshots show the project working from data collection to the final dashboard.
+
+### Final Dashboard
+
+This is the final dashboard. It shows the selected stock’s price trend, moving averages, daily return, volatility, and latest real-time quote.
+
+![Final Streamlit dashboard](docs/screenshots/01_final_dashboard.png)
+
+### Real-Time Data in AWS S3
+
+This shows that real-time stock data came through the AWS streaming pipeline and was saved in the S3 raw-data folder.
+
+![S3 streaming data](docs/screenshots/02_s3_streaming_data.png)
+
+### Data Validation in Databricks
+
+This shows that Databricks checked the historical stock data. Almost all records were valid, and the one bad record was separated instead of being used.
+
+![Databricks validation](docs/screenshots/03_databricks_validation.png)
+
+### Stock Metrics Created with PySpark
+
+This shows the cleaned stock data after PySpark created useful values such as daily return, moving averages, and volatility.
+
+![PySpark metrics](docs/screenshots/04_databricks_pyspark_metrics.png)
+
+### Data Loaded into Snowflake
+
+This shows that Snowflake successfully loaded 2,703,530 historical stock records for analysis.
+
+![Snowflake loaded data](docs/screenshots/05_snowflake_loaded_data.png)
+
 
 ## Architecture
 
